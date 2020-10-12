@@ -1,0 +1,145 @@
+{
+  "name": "svelte-test-starter",
+  "version": "1.0.0",
+  "repository": "git@github.com:newbornfrontender/svelte-test-starter.git",
+  "author": "Infant Frontender <newbornfrontender@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.5.5",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@testing-library/jest-dom": "^4.0.0",
+    "@testing-library/svelte": "^1.7.1",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
+    "commitlint": "^8.1.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-jest": "^22.14.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-svelte3": "^2.7.2",
+    "htmlnano": "^0.2.4",
+    "husky": "^3.0.1",
+    "jest": "^24.8.0",
+    "jest-transform-svelte": "^2.0.2",
+    "lint-staged": "^9.2.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^7.0.17",
+    "postcss-html": "^0.36.0",
+    "postcss-import": "^12.0.1",
+    "postcss-load-config": "^2.1.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-syntax": "^0.36.2",
+    "postcss-use": "^3.0.0",
+    "prettier": "^1.18.2",
+    "prettier-plugin-svelte": "^0.7.0",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.17.0",
+    "rollup-plugin-alias": "^1.5.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-css-only": "^2.1.0",
+    "rollup-plugin-livereload": "^1.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^3.1.8",
+    "rollup-plugin-svelte": "^5.1.0",
+    "rollup-plugin-terser": "^5.1.1",
+    "rollup-pluginutils": "^2.8.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-order": "^3.0.1",
+    "svelte": "^3.6.7"
+  },
+  "dependencies": {
+    "sirv-cli": "^0.4.4"
+  },
+  "scripts": {
+    "format": "prettier --svelte-sort-order scripts-markup-styles --write **/*.{svelte,html,js,json,md} --ignore-path .gitignore",
+    "lint:css": "stylelint --fix src/**/*.{svelte,css}",
+    "lint:css:check": "stylelint-config-prettier-check",
+    "lint:js": "eslint src --fix --ext svelte,js",
+    "lint:js:check": "eslint --print-config src/main.js | eslint-config-prettier-check",
+    "test": "jest",
+    "build": "rollup -c",
+    "autobuild": "rollup -c -w",
+    "dev": "run-p start:dev autobuild",
+    "start": "sirv public --single",
+    "start:dev": "sirv public --single --dev"
+  },
+  "browserslist": [
+    "last 2 chrome versions",
+    "last 2 firefox versions",
+    "last 2 safari versions"
+  ],
+  "prettier": {
+    "printWidth": 100,
+    "useTabs": false,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always"
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-prettier"
+    ],
+    "plugins": [
+      "stylelint-order"
+    ],
+    "rules": {
+      "selector-pseudo-class-no-unknown": [
+        true,
+        {
+          "ignorePseudoClasses": [
+            "global"
+          ]
+        }
+      ],
+      "order/properties-alphabetical-order": true
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.svelte$": "jest-transform-svelte",
+      "^.+\\.js$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "svelte",
+      "js"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/svelte/cleanup-after-each"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/env"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{svelte,css}": [
+      "stylelint --fix",
+      "git add"
+    ],
+    "src/**/*.{svelte,js}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{svelte,html,js,json,md}": [
+      "prettier --svelte-sort-order scripts-markup-styles --write --ignore-path .gitignore",
+      "git add"
+    ]
+  }
+}
