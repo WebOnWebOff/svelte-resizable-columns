@@ -1,14 +1,29 @@
 <script>
   import { ResizableColumns } from '../../../../src/index';
+
+  let left, right, event;
+
+  const update = (e) => {
+	left = e.detail.leftWidth;
+	right = e.detail.rightWidth;
+	event = e.type;
+  }
+
+  const cols = ['One', 'Two', 'Three'],
+  	rows = cols.concat(['Four']);
 </script>
 
 <h1>Demo: Svelte Resize Columns!</h1>
 
 <style>
+  :global(body) {
+	padding:1em;
+  }
   h1 {
     color: purple;
   }
   table {
+	width: 600px;
   	border-collapse: collapse;
   }
   th {
@@ -20,28 +35,27 @@
   	border: 1px solid green;
   	padding: 0.4em;
   }
+  .label {
+	  font-weight: bold;
+  }
 </style>
-<table use:ResizableColumns>
+<table use:ResizableColumns on:resize-columns-start={update} on:resize-columns-move={update}  on:resize-columns-stop={update}>
   <thead>
     <tr>
-      <th>Column One</th>
-      <th>Column Two</th>
-      <th>Column Three</th>
+	{#each cols as col}
+	  <th>Header {col}</th>
+	{/each}
     </tr>
   </thead>
+  
+	{#each rows as row}
 	<tr>
-		<td>Value One -> One</td>
-		<td>Value Two -> One</td>
-		<td>Value Three -> One</td>
-	</tr>
-	<tr>
-		<td>Value One -> Two</td>
-		<td>Value Two -> Two</td>
-		<td>Value Three -> Two</td>
-	</tr>
-	<tr>
-		<td>Value One -> Three</td>
-		<td>Value Two -> Three</td>
-		<td>Value Three -> Three</td>
-	</tr>
+		{#each cols as col}
+		<td>Row {row} -> Col {col}</td>
+		{/each}
+	</tr>	
+	{/each}
 </table>
+<div><span class="label">Left(%):</span><span>{left}</span></div>
+<div><span class="label">Right(%):</span><span>{right}</span></div>
+<div><span class="label">Event:</span><span>{event}</span></div>

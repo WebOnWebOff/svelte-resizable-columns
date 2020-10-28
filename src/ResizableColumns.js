@@ -22,6 +22,12 @@ function setWidth(element, width) {
     element.style.width = width + '%';
 }
 
+function setWidthPx(element, width) {
+    width = width.toFixed(2);
+    width = width > 0 ? width : 0;
+    element.style.width = width + 'px';
+}
+
 function setHeightPx(element, height) {
     height = height.toFixed(2);
     height = height > 0 ? height : 0;
@@ -82,42 +88,42 @@ function ResizableColumns(table, options) {
     // bindEvents(this.window, 'resize', this.syncHandleWidths.bind(this));
     this.window.addEventListener('resize', this.syncHandleWidthsCallback);
 
-    if (this.options.start) {
-      bindEvents(this.table, EVENT_RESIZE_START, this.options.start);
-    }
-    if (this.options.resize) {
-      bindEvents(this.table, EVENT_RESIZE, this.options.resize);
-    }
-    if (this.options.stop) {
-      bindEvents(this.table, EVENT_RESIZE_STOP, this.options.stop);
-    }
+    // if (this.options.start) {
+    //   bindEvents(this.table, EVENT_RESIZE_START, this.options.start);
+    // }
+    // if (this.options.resize) {
+    //   bindEvents(this.table, EVENT_RESIZE, this.options.resize);
+    // }
+    // if (this.options.stop) {
+    //   bindEvents(this.table, EVENT_RESIZE_STOP, this.options.stop);
+    // }
 
-    function bindEvents($target, events, selectorOrCallback, callback) {
-        if(typeof events === 'string') {
-        events = events + this.ns;
-        }
-        else {
-        events = events.join(this.ns + ' ') + this.ns;
-        }
+    // function bindEvents($target, events, selectorOrCallback, callback) {
+    //     if(typeof events === 'string') {
+    //     events = events + this.ns;
+    //     }
+    //     else {
+    //     events = events.join(this.ns + ' ') + this.ns;
+    //     }
 
-        if(arguments.length > 3) {
-        $target.on(events, selectorOrCallback, callback);
-        }
-        else {
-        $target.on(events, selectorOrCallback);
-        }
-    }
+    //     if(arguments.length > 3) {
+    //     $target.on(events, selectorOrCallback, callback);
+    //     }
+    //     else {
+    //     $target.on(events, selectorOrCallback);
+    //     }
+    // }
 
-    function unbindEvents($target, events) {
-        if(!events || events.length === 0) {
-        // events = events + this.ns;
-            console.error('unbindEvents: event names not supplied');
-        }
+    // function unbindEvents($target, events) {
+    //     if(!events || events.length === 0) {
+    //     // events = events + this.ns;
+    //         console.error('unbindEvents: event names not supplied');
+    //     }
 
-        //TODO: unbind custom events
+    //     //TODO: unbind custom events
 
-        // $target.off(events);
-    }
+    //     // $target.off(events);
+    // }
 
     // function triggerEvent(type, args, originalEvent) {
     //     let event = $.Event(type);
@@ -150,7 +156,7 @@ function ResizableColumns(table, options) {
             el.removeEventListener('touchstart', this.onPointerDownCallback);
         });
 
-        this.unbindEvents();
+        // this.unbindEvents();
         // unbindEvents(this.window);
         // unbindEvents(this.ownerDocument);
         // unbindEvents(_table);
@@ -271,7 +277,7 @@ ResizableColumns.prototype = {
     syncHandleWidths: function() {
         let container = this.handleContainer;
 
-        setWidth(container, this.table.offsetWidth);
+        setWidthPx(container, this.table.offsetWidth);
         // $container.width(this.table.width());
 
         container.querySelectorAll('.'+CLASS_HANDLE).forEach((el, i) => {
@@ -285,10 +291,14 @@ ResizableColumns.prototype = {
 
         let header = this.tableHeaders[i];
 
-        let left = header.offsetWidth + (
+        let left2 = header.offsetWidth + (
             header.offsetLeft - this.handleContainer.offsetLeft
             // el.getBoundingClientRect().left - this.handleContainer.getBoundingClientRect().left
         );
+        let left = header.clientWidth + (
+            header.offsetLeft - this.handleContainer.offsetLeft
+        ) + parseInt(getComputedStyle(this.handleContainer.parentNode).paddingLeft);
+
             // let left = $el.data(DATA_TH).outerWidth() + (
             //     $el.data(DATA_TH).offset().left - this.handleContainer.offset().left
             // );
@@ -371,6 +381,17 @@ ResizableColumns.prototype = {
         // leftWidth, rightWidth
         // ],
         // event);
+        
+        this.table.dispatchEvent(
+            new CustomEvent('resize-columns-start', {
+            detail: { 
+                leftColumn,
+                rightColumn,
+                leftWidth,
+                rightWidth
+             },
+            })
+        );
 
         event.preventDefault();
     },
@@ -408,6 +429,18 @@ ResizableColumns.prototype = {
         op.newWidths.left = widthLeft;
         op.newWidths.right = widthRight;
 
+        
+        this.table.dispatchEvent(
+            new CustomEvent('resize-columns-move', {
+            detail: { 
+                leftColumn: op.leftColumn,
+                rightColumn: op.rightColumn,
+                leftWidth: widthLeft,
+                rightWidth: widthRight
+             },
+            })
+        );
+
         // return this.triggerEvent(EVENT_RESIZE, [
         // op.$leftColumn, op.$rightColumn,
         // widthLeft, widthRight
@@ -436,6 +469,18 @@ ResizableColumns.prototype = {
         this.saveColumnWidths();
 
         this.operation = null;
+
+        
+        this.table.dispatchEvent(
+            new CustomEvent('resize-columns-stop', {
+            detail: { 
+                leftColumn: op.leftColumn,
+                rightColumn: op.rightColumn,
+                leftWidth: op.newWidths.left,
+                rightWidth: op.newWidths.right
+             },
+            })
+        );
 
         // return this.triggerEvent(EVENT_RESIZE_STOP, [
         // op.$leftColumn, op.$rightColumn,
