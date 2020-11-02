@@ -1,0 +1,29 @@
+{
+  "name": "svelte-resizable-columns",
+  "version": "1.0.0",
+  "description": "Svelte JS action for resizing HTML table columns",
+  "main": "src/index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:WebOnWebOff/svelte-resizable-columns.git"
+  },
+  "keywords": [
+    "svelte",
+    "table",
+    "column",
+    "resize",
+    "action"
+  ],
+  "author": "Daniel Miller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WebOnWebOff/svelte-resizable-columns/issues"
+  },
+  "homepage": "https://github.com/WebOnWebOff/svelte-resizable-columns#readme"
+}
