@@ -37,6 +37,7 @@ Based on [jquery-resizable-columns](https://github.com/dobtco/jquery-resizable-c
 ```
 #### Guidelines
 - Table should have fixed width.
+- Bundler needs to support css imports. For example, for Rollup + [PostCss](https://postcss.org/) you can use [rollup-plugin-postcss](https://github.com/egoist/rollup-plugin-postcss). See the demo in this repository.
 - Add style *no-resize* for fixed width columns
 - Events: *resize-columns-start*, *resize-columns-move*, *resize-columns-stop*
 - Custom css styles are added to the table, th elements during resize
@@ -52,7 +53,7 @@ Based on [jquery-resizable-columns](https://github.com/dobtco/jquery-resizable-c
   }
 </script>
 
-<table use:ResizableColumns on:resize-columns-start={update} on:resize-columns-move={update}  on:resize-columns-stop={update}>
+<table use:ResizableColumns on:resize-columns-start={update} on:resize-columns-move={update} on:resize-columns-stop={update}>
     ...
 </table>
 

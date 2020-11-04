@@ -87,64 +87,10 @@ function ResizableColumns(table, options) {
     
     // bindEvents(this.window, 'resize', this.syncHandleWidths.bind(this));
     this.window.addEventListener('resize', this.syncHandleWidthsCallback);
-
-    // if (this.options.start) {
-    //   bindEvents(this.table, EVENT_RESIZE_START, this.options.start);
-    // }
-    // if (this.options.resize) {
-    //   bindEvents(this.table, EVENT_RESIZE, this.options.resize);
-    // }
-    // if (this.options.stop) {
-    //   bindEvents(this.table, EVENT_RESIZE_STOP, this.options.stop);
-    // }
-
-    // function bindEvents($target, events, selectorOrCallback, callback) {
-    //     if(typeof events === 'string') {
-    //     events = events + this.ns;
-    //     }
-    //     else {
-    //     events = events.join(this.ns + ' ') + this.ns;
-    //     }
-
-    //     if(arguments.length > 3) {
-    //     $target.on(events, selectorOrCallback, callback);
-    //     }
-    //     else {
-    //     $target.on(events, selectorOrCallback);
-    //     }
-    // }
-
-    // function unbindEvents($target, events) {
-    //     if(!events || events.length === 0) {
-    //     // events = events + this.ns;
-    //         console.error('unbindEvents: event names not supplied');
-    //     }
-
-    //     //TODO: unbind custom events
-
-    //     // $target.off(events);
-    // }
-
-    // function triggerEvent(type, args, originalEvent) {
-    //     let event = $.Event(type);
-    //     if(event.originalEvent) {
-    //     event.originalEvent = $.extend({}, originalEvent);
-    //     }
-
-    //     return this.table.trigger(event, [this].concat(args || []));
-    // }
-
   
   return {
     update(value) {
-      // if(validator) {
-      //   validator.destroy();
-      // }
-      // validator = buildValidator(context, node);
-      // if(validator) {
-      //   context.updateValidators(path, validator);
-      //   context.validateField(path);
-      // }
+
     },
     destroy() {
         let $table = this.table;
@@ -155,15 +101,6 @@ function ResizableColumns(table, options) {
             el.removeEventListener('mousedown', this.onPointerDownCallback);
             el.removeEventListener('touchstart', this.onPointerDownCallback);
         });
-
-        // this.unbindEvents();
-        // unbindEvents(this.window);
-        // unbindEvents(this.ownerDocument);
-        // unbindEvents(_table);
-        // unbindEvents($handles);
-
-        // $handles.removeData(DATA_TH);
-        // $table.removeData(DATA_API);
 
         this.operation = null;
         this.handleContainer.parentNode.removeChild(this.handleContainer);
@@ -189,7 +126,6 @@ ResizableColumns.prototype = {
         this.handleContainer = document.createElement('div');
         this.handleContainer.className = CLASS_HANDLE_CONTAINER;
         this.table.parentNode.insertBefore(this.handleContainer, this.table);
-        //$(_table).before(this.handleContainer); //equivalent
 
         for (let i = 0; i < (this.tableHeaders.length-1); i++) {
             const el = this.tableHeaders[i];
@@ -203,7 +139,6 @@ ResizableColumns.prototype = {
 
             let handle = document.createElement('div');
                 handle.className = CLASS_HANDLE;
-                // .data(DATA_TH, $(el))
             this.handleContainer.appendChild(handle);
         };
 
@@ -213,12 +148,10 @@ ResizableColumns.prototype = {
             el.addEventListener('mousedown', this.onPointerDownCallback);
             el.addEventListener('touchstart', this.onPointerDownCallback);
         });
-        // bindEvents(this.handleContainer, ['mousedown', 'touchstart'], onPointerDown);
     },
     assignPercentageWidths: function() {
         this.tableHeaders.forEach((el, _) => {
             setWidth(el, el.offsetWidth / this.table.offsetWidth * 100);
-            // this.setWidth(el, el.outerWidth() / this.table.width() * 100);
         });
     },
     refreshHeaders: function() {
@@ -278,34 +211,23 @@ ResizableColumns.prototype = {
         let container = this.handleContainer;
 
         setWidthPx(container, this.table.offsetWidth);
-        // $container.width(this.table.width());
-
-        container.querySelectorAll('.'+CLASS_HANDLE).forEach((el, i) => {
 
         let height = this.options.resizeFromBody ?
             this.table.offsetHeight :
             this.table.querySelector('thead').offsetHeight;
-            // let height = this.options.resizeFromBody ?
-            //     this.table.height() :
-            //     this.table.find('thead').height();
 
-        let header = this.tableHeaders[i];
+        container
+        .querySelectorAll('.'+CLASS_HANDLE)
+        .forEach((el, i) => {
 
-        let left2 = header.offsetWidth + (
-            header.offsetLeft - this.handleContainer.offsetLeft
-            // el.getBoundingClientRect().left - this.handleContainer.getBoundingClientRect().left
-        );
-        let left = header.clientWidth + (
-            header.offsetLeft - this.handleContainer.offsetLeft
-        ) + parseInt(getComputedStyle(this.handleContainer.parentNode).paddingLeft);
+            let header = this.tableHeaders[i];
 
-            // let left = $el.data(DATA_TH).outerWidth() + (
-            //     $el.data(DATA_TH).offset().left - this.handleContainer.offset().left
-            // );
+            let left = header.clientWidth + (
+                header.offsetLeft - this.handleContainer.offsetLeft
+            ) + parseInt(getComputedStyle(this.handleContainer.parentNode).paddingLeft);
 
             setHeightPx(el, height);
             setLeftPx(el, left);
-            // el.css({ left, height });
         });
     },
     onPointerDown: function(event) {
@@ -330,12 +252,10 @@ ResizableColumns.prototype = {
         if(leftColumn && leftColumn.matches(SELECTOR_UNRESIZABLE)) {
             leftColumn = null;
         }
-        // let $leftColumn = this.tableHeaders.eq(gripIndex).not(SELECTOR_UNRESIZABLE);
         let rightColumn = this.tableHeaders[gripIndex + 1];        
         if(rightColumn && rightColumn.matches(SELECTOR_UNRESIZABLE)) {
             rightColumn = null;
         }
-        // let $rightColumn = this.tableHeaders.eq(gripIndex + 1).not(SELECTOR_UNRESIZABLE);
 
         let leftWidth = parseWidth(leftColumn);
         let rightWidth = parseWidth(rightColumn);
@@ -355,8 +275,6 @@ ResizableColumns.prototype = {
             }
         };
 
-        // bindEvents(this.ownerDocument, ['mousemove', 'touchmove'], onPointerMove);
-        // bindEvents(this.ownerDocument, ['mouseup', 'touchend'], onPointerUp);
         this.ownerDocument.addEventListener('mousemove', this.onPointerMoveCallback);
         this.ownerDocument.addEventListener('touchmove', this.onPointerMoveCallback);
         this.ownerDocument.addEventListener('mouseup', this.onPointerUpCallback);
@@ -364,23 +282,10 @@ ResizableColumns.prototype = {
 
         this.handleContainer.className += ` ${CLASS_TABLE_RESIZING}`;
         this.table.className += ` ${CLASS_TABLE_RESIZING}`;
-        // this.handleContainer
-        // .add(_table)
-        // .addClass(CLASS_TABLE_RESIZING);
 
         leftColumn.className += ` ${CLASS_COLUMN_RESIZING}`;
         rightColumn.className += ` ${CLASS_COLUMN_RESIZING}`;
         currentGrip.className += ` ${CLASS_COLUMN_RESIZING}`;
-        // leftColumn
-        // .add($rightColumn)
-        // .add($currentGrip)
-        // .addClass(CLASS_COLUMN_RESIZING);
-
-        // this.triggerEvent(EVENT_RESIZE_START, [
-        // $leftColumn, $rightColumn,
-        // leftWidth, rightWidth
-        // ],
-        // event);
         
         this.table.dispatchEvent(
             new CustomEvent('resize-columns-start', {
@@ -401,9 +306,8 @@ ResizableColumns.prototype = {
 
         // Determine the delta change between start and new mouse position, as a percentage of the table width
         let difference = (getPointerX(event) - op.startX) / this.table.offsetWidth * 100;
-        // let difference = (getPointerX(event) - op.startX) / this.table.width() * 100;
         if(difference === 0) {
-        return;
+            return;
         }
 
         let leftColumn = op.leftColumn;
@@ -411,12 +315,12 @@ ResizableColumns.prototype = {
         let widthLeft, widthRight;
 
         if(difference > 0) {
-        widthLeft = this.constrainWidth(op.widths.left + (op.widths.right - op.newWidths.right));
-        widthRight = this.constrainWidth(op.widths.right - difference);
+            widthLeft = this.constrainWidth(op.widths.left + (op.widths.right - op.newWidths.right));
+            widthRight = this.constrainWidth(op.widths.right - difference);
         }
         else if(difference < 0) {
-        widthLeft = this.constrainWidth(op.widths.left + difference);
-        widthRight = this.constrainWidth(op.widths.right + (op.widths.left - op.newWidths.left));
+            widthLeft = this.constrainWidth(op.widths.left + difference);
+            widthRight = this.constrainWidth(op.widths.right + (op.widths.left - op.newWidths.left));
         }
 
         if(leftColumn) {
@@ -440,19 +344,11 @@ ResizableColumns.prototype = {
              },
             })
         );
-
-        // return this.triggerEvent(EVENT_RESIZE, [
-        // op.$leftColumn, op.$rightColumn,
-        // widthLeft, widthRight
-        // ],
-        // event);
     },
     onPointerUp: function(event) {
         let op = this.operation;
         if(!this.operation) { return; }
 
-        // unbindEvents(this.ownerDocument, ['mouseup', 'touchend', 'mousemove', 'touchmove']);
-        
         this.ownerDocument.removeEventListener('mousemove', this.onPointerMoveCallback);
         this.ownerDocument.removeEventListener('touchmove', this.onPointerMoveCallback);
         this.ownerDocument.removeEventListener('mouseup', this.onPointerUpCallback);
@@ -481,12 +377,6 @@ ResizableColumns.prototype = {
              },
             })
         );
-
-        // return this.triggerEvent(EVENT_RESIZE_STOP, [
-        // op.$leftColumn, op.$rightColumn,
-        // op.newWidths.left, op.newWidths.right
-        // ],
-        // event);
     }
 }
 
