@@ -77,6 +77,8 @@ function ResizableColumns(table, options) {
       console.error('The ResizableColumns action applies only to table DOM elements.');
     }
 
+    table.ResizableColumns = this;
+
     this.options = Object.assign({}, ResizableColumns.defaults, options);
     this.window = window;
     this.ownerDocument = table.ownerDocument;
@@ -102,25 +104,26 @@ function ResizableColumns(table, options) {
 
     },
     destroy() {
-        let $table = this.table;
-        let handles = this.handleContainer.querySelectorAll('.'+CLASS_HANDLE);
 
-        this.window.removeEventListener('resize', this.syncHandleWidthsCallback);        
+        let self = table.ResizableColumns;
+        table.ResizableColumns = null;
+
+        let handles = self.handleContainer.querySelectorAll('.'+CLASS_HANDLE);
+
+        self.window.removeEventListener('resize', self.syncHandleWidthsCallback);        
         handles.forEach(el => {
-            el.removeEventListener('mousedown', this.onPointerDownCallback);
-            el.removeEventListener('touchstart', this.onPointerDownCallback);
+            el.removeEventListener('mousedown', self.onPointerDownCallback);
+            el.removeEventListener('touchstart', self.onPointerDownCallback);
         });
 
-        this.operation = null;
-        this.handleContainer.parentNode.removeChild(this.handleContainer);
-        this.handleContainer = null;
-        this.tableHeaders = null;
-        this.table = null;
-        this.ownerDocument = null;
-        this.window = null;
-        this.options = null;
-
-        return $table;
+        self.operation = null;
+        self.handleContainer.parentNode.removeChild(self.handleContainer);
+        self.handleContainer = null;
+        self.tableHeaders = null;
+        self.table = null;
+        self.ownerDocument = null;
+        self.window = null;
+        self.options = null;
     }
   };  
 }

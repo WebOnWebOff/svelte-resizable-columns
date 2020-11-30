@@ -3,6 +3,8 @@
 
   let left, right, event;
 
+  let show = true;
+
   const update = (e) => {
 	left = e.detail.leftWidth;
 	right = e.detail.rightWidth;
@@ -12,9 +14,6 @@
   const cols = ['One', 'Two', 'Three'],
   	rows = cols.concat(['Four']);
 </script>
-
-<h1>Demo: Svelte Resize Columns!</h1>
-
 <style>
   :global(body) {
 	padding:1em;
@@ -39,6 +38,11 @@
 	  font-weight: bold;
   }
 </style>
+<h1>Demo: Svelte Resize Columns!</h1>
+<div>
+	<input type="checkbox" bind:checked={show}/> Show
+</div>
+{#if show }
 <table use:ResizableColumns on:resize-columns-start={update} on:resize-columns-move={update}  on:resize-columns-stop={update}>
   <thead>
     <tr>
@@ -56,6 +60,7 @@
 	</tr>	
 	{/each}
 </table>
+{/if}
 <div><span class="label">Left(%):</span><span>{left}</span></div>
 <div><span class="label">Right(%):</span><span>{right}</span></div>
 <div><span class="label">Event:</span><span>{event}</span></div>
