@@ -52,8 +52,17 @@ function parseWidth(element) {
 }
 
 function indexOfElementInParent(el) {
-    if(!el) return -1;
-    return [...el.parentNode.children].indexOf(el);
+    if(el && el.parentNode && el.parentNode.children) {
+        const children = el.parentNode.children,
+        numItems = children.length;
+        for (let index = 0; index < children.length; index++) {
+            const element = children[index];
+            if(element === el) {
+                return index;
+            }
+        }
+    }
+    return -1;
 }
 
 function isVisible(el) {
