@@ -8,6 +8,7 @@ const DATA_TH = 'th';
 const CLASS_TABLE_RESIZING = 'rc-table-resizing';
 const CLASS_COLUMN_RESIZING = 'rc-column-resizing';
 const CLASS_HANDLE = 'rc-handle';
+const CLASS_HANDLE_NORESIZE = 'rc-handle-noresize';
 const CLASS_HANDLE_CONTAINER = 'rc-handle-container';
 
 const EVENT_RESIZE_START = 'column:resize:start';
@@ -145,12 +146,13 @@ ResizableColumns.prototype = {
             let current = this.tableHeaders[i];
             let next = this.tableHeaders[i + 1];
 
-            if (!next || current.matches(SELECTOR_UNRESIZABLE) || next.matches(SELECTOR_UNRESIZABLE)) {
-                return;
-            }
 
-            let handle = document.createElement('div');
+            let handle = document.createElement('div');            
+            if (!next || current.matches(SELECTOR_UNRESIZABLE) || next.matches(SELECTOR_UNRESIZABLE)) {
+                handle.className = CLASS_HANDLE_NORESIZE;
+            } else {
                 handle.className = CLASS_HANDLE;
+            }
             this.handleContainer.appendChild(handle);
         };
 
@@ -229,7 +231,8 @@ ResizableColumns.prototype = {
             this.table.querySelector('thead').offsetHeight;
 
         container
-        .querySelectorAll('.'+CLASS_HANDLE)
+        .querySelectorAll('div')
+        // .querySelectorAll('.'+CLASS_HANDLE)
         .forEach((el, i) => {
 
             let header = this.tableHeaders[i];
@@ -256,7 +259,7 @@ ResizableColumns.prototype = {
         // Ignore non-resizable columns
         let currentGrip = event.currentTarget;
         if(currentGrip.matches(SELECTOR_UNRESIZABLE)) {
-        return;
+            return;
         }
 
         let gripIndex = indexOfElementInParent(currentGrip);
@@ -295,8 +298,8 @@ ResizableColumns.prototype = {
         this.handleContainer.className += ` ${CLASS_TABLE_RESIZING}`;
         this.table.className += ` ${CLASS_TABLE_RESIZING}`;
 
-        leftColumn.className += ` ${CLASS_COLUMN_RESIZING}`;
-        rightColumn.className += ` ${CLASS_COLUMN_RESIZING}`;
+        if(leftColumn) leftColumn.className += ` ${CLASS_COLUMN_RESIZING}`;
+        if(rightColumn) rightColumn.className += ` ${CLASS_COLUMN_RESIZING}`;
         currentGrip.className += ` ${CLASS_COLUMN_RESIZING}`;
         
         this.table.dispatchEvent(
@@ -369,8 +372,8 @@ ResizableColumns.prototype = {
         this.handleContainer.className = this.handleContainer.className.replace(' '+CLASS_TABLE_RESIZING, '');
         this.table.className = this.table.className.replace(' '+CLASS_TABLE_RESIZING, '');
 
-        op.leftColumn.className = op.leftColumn.className.replace(' '+CLASS_COLUMN_RESIZING, '');
-        op.rightColumn.className = op.rightColumn.className.replace(' '+CLASS_COLUMN_RESIZING, '');
+        if(op.leftColumn) op.leftColumn.className = op.leftColumn.className.replace(' '+CLASS_COLUMN_RESIZING, '');
+        if(op.rightColumn) op.rightColumn.className = op.rightColumn.className.replace(' '+CLASS_COLUMN_RESIZING, '');
         op.currentGrip.className = op.currentGrip.className.replace(' '+CLASS_COLUMN_RESIZING, '');
 
         this.syncHandleWidths();

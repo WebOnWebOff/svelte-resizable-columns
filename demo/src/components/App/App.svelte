@@ -1,18 +1,23 @@
 <script>
-  import { ResizableColumns } from '../../../../src/index';
+	import { ResizableColumns } from '../../../../src/index';
 
-  let left, right, event;
+	let left, right, event;
 
-  let show = true;
+	let show = true;
 
-  const update = (e) => {
-	left = e.detail.leftWidth;
-	right = e.detail.rightWidth;
-	event = e.type;
-  }
+	const update = (e) => {
+		left = e.detail.leftWidth;
+		right = e.detail.rightWidth;
+		event = e.type;
+	}
 
-  const cols = ['One', 'Two', 'Three'],
-  	rows = cols.concat(['Four']);
+  	const cols = ['One', 'Two', 'Three'],
+	  rows = cols.concat(['Four']),
+	  fixedCols = ['One'];
+
+	function isFixed(col) {
+		return fixedCols.indexOf(col) === -1 ? null : true;
+	}
 </script>
 <style>
   :global(body) {
@@ -47,7 +52,9 @@
   <thead>
     <tr>
 	{#each cols as col}
-	  <th>Header {col}</th>
+	<th data-noresize={isFixed(col)}>
+		Header {col}{#if isFixed(col)}&nbsp;(FIXED){/if}
+	</th>
 	{/each}
     </tr>
   </thead>

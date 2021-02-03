@@ -1,12 +1,15 @@
 .rc-handle-container {
   position: relative;
 }
-.rc-handle {
+.rc-handle,
+.rc-handle-noresize {
   position: absolute;
   width: 7px;
-  cursor: ew-resize;
   margin-left: -3px;
   z-index: 2;
+}
+.rc-handle {
+  cursor: ew-resize;
 }
 table.rc-table-resizing {
   cursor: ew-resize;
