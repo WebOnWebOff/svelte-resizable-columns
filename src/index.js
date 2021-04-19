@@ -1,5 +1,7 @@
 import ResizableColumns from './ResizableColumns';
-export { ResizableColumns };
+import FlexibleColumns from './FlexibleColumns';
+export { ResizableColumns, FlexibleColumns };
 export default {
-	ResizableColumns
+	ResizableColumns,
+	FlexibleColumns
 }

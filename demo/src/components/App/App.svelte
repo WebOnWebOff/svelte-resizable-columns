@@ -1,73 +1,146 @@
 <script>
-	import { ResizableColumns } from '../../../../src/index';
+  import { ResizableColumns } from '../../../../src/index';
+  import { FlexibleColumns } from '../../../../src/index';
 
-	let left, right, event;
+  let left, right, table, event;
 
-	let show = true;
+  let tableType = 'flexible';
+  let maxWidthTable = 1000;
 
-	const update = (e) => {
-		left = e.detail.leftWidth;
-		right = e.detail.rightWidth;
-		event = e.type;
-	}
+  const update = (e) => {
+    left = e.detail.leftWidth;
+    right = e.detail.rightWidth;
+    table = e.detail.tableWidth;
+    event = e.type;
+  };
 
-  	const cols = ['One', 'Two', 'Three'],
-	  rows = cols.concat(['Four']),
-	  fixedCols = ['One'];
+  const cols = ['One', 'Two', 'Three', 'Four'],
+    rows = cols.concat(['Five']),
+    fixedCols = ['Three'];
 
-	function isFixed(col) {
-		return fixedCols.indexOf(col) === -1 ? null : true;
-	}
+  function isFixed(col) {
+    return fixedCols.indexOf(col) === -1 ? null : true;
+  }
 </script>
+
+<h1>Demo: Svelte Resize Columns</h1>
+<div>
+  <label>
+    <input type="radio" bind:group={tableType} value={'resizable'} />
+    Resizable (%)
+  </label>
+</div>
+<div>
+  <label>
+    <input type="radio" bind:group={tableType} value={'flexible'} />
+    Flexible (px)
+  </label>
+</div>
+{#if tableType === 'resizable'}
+  <h2>Resizable Columns (%)</h2>
+  <table
+    use:ResizableColumns
+    on:resize-columns-start={update}
+    on:resize-columns-move={update}
+    on:resize-columns-stop={update}>
+    <thead>
+      <tr>
+        {#each cols as col}
+          <th data-noresize={isFixed(col)}>
+            Header {col}
+            {#if isFixed(col)}&nbsp;(FIXED){/if}
+          </th>
+        {/each}
+      </tr>
+    </thead>
+
+    {#each rows as row}
+      <tr>
+        {#each cols as col}
+          <td>Row {row} -> Col {col}</td>
+        {/each}
+      </tr>
+    {/each}
+  </table>
+  <div>
+    <span class="label">Left(%):</span>
+    <span>{left}</span>
+  </div>
+  <div>
+    <span class="label">Right(%):</span>
+    <span>{right}</span>
+  </div>
+  <div>
+    <span class="label">Event:</span>
+    <span>{event}</span>
+  </div>
+{/if}
+{#if tableType === 'flexible'}
+  <h2>Flexible Columns (px)</h2>
+  <table
+    use:FlexibleColumns={{ maxWidthTable }}
+    on:flexible-columns-start={update}
+    on:flexible-columns-move={update}
+    on:flexible-columns-stop={update}>
+    <thead>
+      <tr>
+        {#each cols as col}
+          <th data-noresize={isFixed(col)}>
+            Header {col}
+            {#if isFixed(col)}&nbsp;(FIXED){/if}
+          </th>
+        {/each}
+      </tr>
+    </thead>
+
+    {#each rows as row}
+      <tr>
+        {#each cols as col}
+          <td>Row {row} -> Col {col}</td>
+        {/each}
+      </tr>
+    {/each}
+  </table>
+  <div>
+    <span class="label">maxWidthTable (px):</span>
+    <span>{maxWidthTable}</span>
+  </div>
+  <div>
+    <span class="label">Left (px):</span>
+    <span>{left}</span>
+  </div>
+  <div>
+    <span class="label">Table (px):</span>
+    <span>{table}</span>
+  </div>
+  <div>
+    <span class="label">Event:</span>
+    <span>{event}</span>
+  </div>
+{/if}
+
 <style>
   :global(body) {
-	padding:1em;
+    padding: 1em;
   }
   h1 {
     color: purple;
   }
   table {
-	width: 600px;
-  	border-collapse: collapse;
+    border-collapse: collapse;
+    width: 600px;
   }
   th {
-  	background-color: #4CAF50;
-  	font-weight: bold;
-  	color: #fff;
+    background-color: #4caf50;
+    color: #fff;
+    font-weight: bold;
   }
-  th, td { 
-  	border: 1px solid green;
-  	padding: 0.4em;
+  th,
+  td {
+    border: 1px solid green;
+    padding: 0.4em;
   }
   .label {
-	  font-weight: bold;
+    font-weight: bold;
   }
 </style>
-<h1>Demo: Svelte Resize Columns!</h1>
-<div>
-	<input type="checkbox" bind:checked={show}/> Show
-</div>
-{#if show }
-<table use:ResizableColumns on:resize-columns-start={update} on:resize-columns-move={update}  on:resize-columns-stop={update}>
-  <thead>
-    <tr>
-	{#each cols as col}
-	<th data-noresize={isFixed(col)}>
-		Header {col}{#if isFixed(col)}&nbsp;(FIXED){/if}
-	</th>
-	{/each}
-    </tr>
-  </thead>
-  
-	{#each rows as row}
-	<tr>
-		{#each cols as col}
-		<td>Row {row} -> Col {col}</td>
-		{/each}
-	</tr>	
-	{/each}
-</table>
-{/if}
-<div><span class="label">Left(%):</span><span>{left}</span></div>
-<div><span class="label">Right(%):</span><span>{right}</span></div>
-<div><span class="label">Event:</span><span>{event}</span></div>

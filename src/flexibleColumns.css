@@ -1,0 +1,21 @@
+.fc-handle-container {
+  position: relative;
+}
+.fc-handle,
+.fc-handle-noresize {
+  position: absolute;
+  width: 7px;
+  margin-left: -3px;
+  z-index: 2;
+}
+.fc-handle {
+  cursor: ew-resize;
+}
+table.fc-table-resizing {
+  cursor: ew-resize;
+}
+table.fc-table-resizing thead,
+table.fc-table-resizing thead > th,
+table.fc-table-resizing thead > th > a {
+  cursor: ew-resize;
+}
