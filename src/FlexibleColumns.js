@@ -17,12 +17,6 @@ const EVENT_RESIZE_STOP = 'column:resize:stop';
 
 const SELECTOR_UNRESIZABLE = `[data-noresize]`;
 
-function setWidth(element, width) {
-    width = width.toFixed(2);
-    width = width > 0 ? width : 0;
-    element.style.width = width + '%';
-}
-
 function setWidthPx(element, width) {
     width = width.toFixed(2);
     width = width > 0 ? width : 0;
@@ -101,12 +95,11 @@ function FlexibleColumns(table, options) {
     this.restoreColumnWidths();
     this.syncHandleWidths();
     
-    // bindEvents(this.window, 'resize', this.syncHandleWidths.bind(this));
     this.window.addEventListener('resize', this.syncHandleWidthsCallback);
   
   return {
     update(options) {
-        
+
     },
     destroy() {
 
@@ -186,11 +179,6 @@ FlexibleColumns.prototype = {
             el.addEventListener('touchstart', this.onPointerDownCallback);
         });
     },
-    assignPercentageWidths: function() {
-        this.tableHeaders.forEach((el, _) => {
-            setWidth(el, el.offsetWidth / this.table.offsetWidth * 100);
-        });
-    },
     refreshHeaders: function() {
         // Allow the selector to be both a regular selctor string as well as
         // a dynamic callback
@@ -201,8 +189,6 @@ FlexibleColumns.prototype = {
         }
         this.tableHeaders = Array.from(getHeaders.call(null, this.table)).filter(el => isVisible(el));
 
-        // Assign percentage widths first, then create drag handles
-        // this.assignPercentageWidths();
         this.createHandles();
     },
     restoreColumnWidths: function() {
@@ -214,7 +200,7 @@ FlexibleColumns.prototype = {
             );
 
             if(width != null) {
-                setWidth(el, width);
+                setWidthPx(el, width);
             }
         }
         });
@@ -247,7 +233,6 @@ FlexibleColumns.prototype = {
     validateNewWidths: function(colWidth, tableWidth) {
         return colWidth === this.constrainWidth(colWidth) &&
             tableWidth === this.constrainTableWidth(tableWidth);
-    // console.log('tableWidth ' + tableWidth + ' - ' + this.constrainTableWidth(tableWidth));
     },
     saveColumnWidths: function() {
         this.tableHeaders.forEach((el, _) => {
@@ -306,24 +291,18 @@ FlexibleColumns.prototype = {
         if(leftColumn && leftColumn.matches(SELECTOR_UNRESIZABLE)) {
             leftColumn = null;
         }
-        // let rightColumn = this.tableHeaders[gripIndex + 1];        
-        // if(rightColumn && rightColumn.matches(SELECTOR_UNRESIZABLE)) {
-        //     rightColumn = null;
-        // }
 
         let leftWidth = getActualWidth(leftColumn);
-        // let rightWidth = parseWidth(rightColumn);
         let tableWidth = getActualWidth(this.table);
 
         this.operation = {
-            leftColumn, /*rightColumn, */currentGrip,
+            leftColumn, currentGrip,
             table: this.table,
 
             startX: getPointerX(event),
 
             widths: {
                 left: leftWidth,
-                // right: rightWidth,
                 table: tableWidth
             },
             newWidths: {
@@ -342,16 +321,13 @@ FlexibleColumns.prototype = {
         this.table.className += ` ${CLASS_TABLE_RESIZING}`;
 
         if(leftColumn) leftColumn.className += ` ${CLASS_COLUMN_RESIZING}`;
-        // if(rightColumn) rightColumn.className += ` ${CLASS_COLUMN_RESIZING}`;
         currentGrip.className += ` ${CLASS_COLUMN_RESIZING}`;
         
         this.table.dispatchEvent(
             new CustomEvent('flexible-columns-start', {
             detail: { 
                 leftColumn,
-                // rightColumn,
                 leftWidth,
-                // rightWidth
                 tableWidth
              },
             })
@@ -370,14 +346,11 @@ FlexibleColumns.prototype = {
         }
 
         let leftColumn = op.leftColumn;
-        // let rightColumn = op.rightColumn;
         let table = this.table;
-        let widthLeft/*, widthRight*/, widthTable;
+        let widthLeft, widthTable;
 
         if(difference !== 0) {
-            // widthLeft = this.constrainWidth(op.widths.left + (op.widths.right - op.newWidths.right));
             widthLeft = op.widths.left + difference;
-            // widthRight = this.constrainWidth(op.widths.right - difference);
             widthTable = op.widths.table + difference;
         }
 
@@ -391,22 +364,16 @@ FlexibleColumns.prototype = {
         if(table) {
             setWidthPx(table, widthTable);
         }
-        // if(rightColumn) {
-        //     setWidth(rightColumn, widthRight);
-        // }
 
         op.newWidths.left = widthLeft;
         op.newWidths.table = widthTable;
-        // op.newWidths.right = widthRight;
 
         
         this.table.dispatchEvent(
             new CustomEvent('flexible-columns-move', {
             detail: { 
                 leftColumn: op.leftColumn,
-                // rightColumn: op.rightColumn,
                 leftWidth: widthLeft,
-                // rightWidth: widthRight
                 tableWidth: widthTable
              },
             })
@@ -425,7 +392,6 @@ FlexibleColumns.prototype = {
         this.table.className = this.table.className.replace(' '+CLASS_TABLE_RESIZING, '');
 
         if(op.leftColumn) op.leftColumn.className = op.leftColumn.className.replace(' '+CLASS_COLUMN_RESIZING, '');
-        // if(op.rightColumn) op.rightColumn.className = op.rightColumn.className.replace(' '+CLASS_COLUMN_RESIZING, '');
         op.currentGrip.className = op.currentGrip.className.replace(' '+CLASS_COLUMN_RESIZING, '');
 
         this.syncHandleWidths();

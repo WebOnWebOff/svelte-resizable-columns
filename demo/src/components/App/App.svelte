@@ -6,6 +6,7 @@
 
   let tableType = 'flexible';
   let maxWidthTable = 1000;
+  let minWidthTable = 500;
 
   const update = (e) => {
     left = e.detail.leftWidth;
@@ -78,7 +79,7 @@
 {#if tableType === 'flexible'}
   <h2>Flexible Columns (px)</h2>
   <table
-    use:FlexibleColumns={{ maxWidthTable }}
+    use:FlexibleColumns={{ maxWidthTable, minWidthTable }}
     on:flexible-columns-start={update}
     on:flexible-columns-move={update}
     on:flexible-columns-stop={update}>
@@ -101,6 +102,10 @@
       </tr>
     {/each}
   </table>
+  <div>
+    <span class="label">minWidthTable (px):</span>
+    <span>{minWidthTable}</span>
+  </div>
   <div>
     <span class="label">maxWidthTable (px):</span>
     <span>{maxWidthTable}</span>
