@@ -43,7 +43,7 @@ function getPointerX(event) {
 }
 
 function parseWidth(element) {
-    return element ? parseFloat(element.style.width.replace('%', '')) : 0;
+    return element ? parseFloat(element.style.width.replace('%', '').replace('px', '')) : 0;
 }
 
 function getActualWidth(element) {
@@ -194,18 +194,29 @@ FlexibleColumns.prototype = {
 
         this.createHandles();
     },
-    restoreColumnWidths: function() {
-        this.tableHeaders.forEach((el, _) => {
-
-        if(this.options.store && !el.matches(SELECTOR_UNRESIZABLE)) {
-            let width = this.options.store.get(
-                this.generateColumnId(el)
-            );
-
-            if(width != null) {
-                setWidthPx(el, width);
+    restoreTableWidth: function() {
+        const tableId = this.options.getTableId && this.options.getTableId(this.table);
+        if(tableId && this.options.store) {
+            let width = parseFloat(this.options.store.get(
+                tableId
+            ));
+            if(width) {
+                setWidthPx(this.table, width);
             }
         }
+    },
+    restoreColumnWidths: function() {
+        this.restoreTableWidth();
+        this.tableHeaders.forEach((el) => {
+            const columnId = this.options.getColumnId && this.options.getColumnId(this.table, el);
+            if(columnId && this.options.store && !el.matches(SELECTOR_UNRESIZABLE)) {
+                let width = parseFloat(this.options.store.get(
+                    columnId
+                ));
+                if(width) {
+                    setWidthPx(el, width);
+                }
+            }
         });
     },
     generateColumnId: function($el) {
@@ -238,18 +249,47 @@ FlexibleColumns.prototype = {
             tableWidth === this.constrainTableWidth(tableWidth);
     },
     saveColumnWidths: function() {
-        this.tableHeaders.forEach((el, _) => {
+        this.saveTableWidth();
+        this.tableHeaders.forEach((el) => {
+            this.saveColumnWidth(el);
+        });
+    },
+    saveTableWidth: function(el) {
+        const tableId = this.options.getTableId && this.options.getTableId(this.table);
+        if (tableId && this.options.store) {
+            let newWidth = this.table.offsetWidth;
+            // let newWidth = parseWidth(el);
+            // if(isNaN(newWidth) || !newWidth) {
+            //     newWidth = el.offsetWidth;
+            // }
 
-        if (this.options.store && !el.matches(SELECTOR_UNRESIZABLE)) {
             this.options.store.set(
-                this.generateColumnId(el),
-                parseWidth(el)
+                tableId,
+                newWidth
             );
         }
-        });
+    },
+    saveColumnWidth: function(el) {
+        const columnId = this.options.getColumnId && this.options.getColumnId(this.table, el);
+        if (columnId && this.options.store && !el.matches(SELECTOR_UNRESIZABLE)) {
+            let newWidth = el.offsetWidth;
+            // let newWidth = parseWidth(el);
+            // if(isNaN(newWidth) || !newWidth) {
+            //     newWidth = el.offsetWidth;
+            // }
+
+            this.options.store.set(
+                columnId,
+                newWidth
+            );
+        }
     },    
     syncHandleWidths: function() {
         let container = this.handleContainer;
+        
+        if(!container) {
+            return;
+        }
 
         setWidthPx(container, this.table.offsetWidth);
 
@@ -400,6 +440,7 @@ FlexibleColumns.prototype = {
 
         this.syncHandleWidths();
         this.saveColumnWidths();
+        // this.saveColumnWidth(op.leftColumn);
 
         this.operation = null;
 
@@ -430,7 +471,18 @@ FlexibleColumns.defaults = {
         return tr.querySelectorAll('td');
     }
   },
-  store: window.store,
+  getTableId: (table) => {
+    return table && table.getAttribute('table-id');
+  },
+  getColumnId: (table, column) => {
+    const tableId = table && table.getAttribute('table-id');
+    const columnId = column && column.getAttribute('column-id');
+    return [tableId, columnId].filter(Boolean).join('$');
+  },
+  store: {
+    get: (id) => localStorage && localStorage.getItem(id),
+    set: (id, val) => localStorage && localStorage.setItem(id, val),
+  },
   syncHandlers: true,
   resizeFromBody: true,
   maxWidth: null,

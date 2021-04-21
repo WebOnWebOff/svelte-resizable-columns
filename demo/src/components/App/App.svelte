@@ -82,11 +82,12 @@
     use:FlexibleColumns={{ maxWidthTable, minWidthTable }}
     on:flexible-columns-start={update}
     on:flexible-columns-move={update}
-    on:flexible-columns-stop={update}>
+    on:flexible-columns-stop={update}
+    table-id="FlexibleTable">
     <thead>
       <tr>
         {#each cols as col}
-          <th data-noresize={isFixed(col)}>
+          <th data-noresize={isFixed(col)} column-id={col}>
             Header {col}
             {#if isFixed(col)}&nbsp;(FIXED){/if}
           </th>
