@@ -2,7 +2,7 @@
   import { ResizableColumns } from '../../../../src/index';
   import { FlexibleColumns } from '../../../../src/index';
 
-  let left, right, table, event;
+  let left, right, table, column, event;
 
   let tableType = 'flexible';
   let maxWidthTable = 1000;
@@ -12,6 +12,7 @@
     left = e.detail.leftWidth;
     right = e.detail.rightWidth;
     table = e.detail.tableWidth;
+    column = e.detail.columnWidth;
     event = e.type;
   };
 
@@ -39,6 +40,10 @@
 </div>
 {#if tableType === 'resizable'}
   <h2>Resizable Columns (%)</h2>
+  <p>
+    Uses percentages. Requires a fixed-width table. Adjusts both left and right column widths. Use
+    "data-noresize" attribute to ignore column.
+  </p>
   <table
     use:ResizableColumns
     on:resize-columns-start={update}
@@ -78,6 +83,12 @@
 {/if}
 {#if tableType === 'flexible'}
   <h2>Flexible Columns (px)</h2>
+  <p>
+    Uses pixel widths. Adjusts widths for the relevant column and the table. Use "noresize"
+    attribute to ignore column. Local Storage supported by default when table and columns have
+    identity attributes ("table-id" and "column-id"). Override storage provider and identity rules
+    in the Action parameter options.
+  </p>
   <table
     use:FlexibleColumns={{ maxWidthTable, minWidthTable }}
     on:flexible-columns-start={update}
@@ -87,7 +98,7 @@
     <thead>
       <tr>
         {#each cols as col}
-          <th data-noresize={isFixed(col)} column-id={col}>
+          <th noresize={isFixed(col)} column-id={col}>
             Header {col}
             {#if isFixed(col)}&nbsp;(FIXED){/if}
           </th>
@@ -112,8 +123,8 @@
     <span>{maxWidthTable}</span>
   </div>
   <div>
-    <span class="label">Left (px):</span>
-    <span>{left}</span>
+    <span class="label">Column (px):</span>
+    <span>{column}</span>
   </div>
   <div>
     <span class="label">Table (px):</span>

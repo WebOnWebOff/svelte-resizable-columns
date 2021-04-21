@@ -15,7 +15,7 @@ const EVENT_RESIZE_START = 'column:resize:start';
 const EVENT_RESIZE = 'column:resize';
 const EVENT_RESIZE_STOP = 'column:resize:stop';
 
-const SELECTOR_UNRESIZABLE = `[data-noresize]`;
+const SELECTOR_UNRESIZABLE = `[noresize]`;
 
 function setWidthPx(element, width) {
     width = width.toFixed(2);
@@ -330,26 +330,26 @@ FlexibleColumns.prototype = {
         }
 
         let gripIndex = indexOfElementInParent(currentGrip);
-        let leftColumn = this.tableHeaders[gripIndex];
-        if(leftColumn && leftColumn.matches(SELECTOR_UNRESIZABLE)) {
-            leftColumn = null;
+        let column = this.tableHeaders[gripIndex];
+        if(column && column.matches(SELECTOR_UNRESIZABLE)) {
+            column = null;
         }
 
-        let leftWidth = getActualWidth(leftColumn);
+        let columnWidth = getActualWidth(column);
         let tableWidth = getActualWidth(this.table);
 
         this.operation = {
-            leftColumn, currentGrip,
+            column, currentGrip,
             table: this.table,
 
             startX: getPointerX(event),
 
             widths: {
-                left: leftWidth,
+                column: columnWidth,
                 table: tableWidth
             },
             newWidths: {
-                left: leftWidth,
+                column: columnWidth,
                 // right: rightWidth
                 table: tableWidth
             }
@@ -363,14 +363,14 @@ FlexibleColumns.prototype = {
         this.handleContainer.className += ` ${CLASS_TABLE_RESIZING}`;
         this.table.className += ` ${CLASS_TABLE_RESIZING}`;
 
-        if(leftColumn) leftColumn.className += ` ${CLASS_COLUMN_RESIZING}`;
+        if(column) column.className += ` ${CLASS_COLUMN_RESIZING}`;
         currentGrip.className += ` ${CLASS_COLUMN_RESIZING}`;
         
         this.table.dispatchEvent(
             new CustomEvent('flexible-columns-start', {
             detail: { 
-                leftColumn,
-                leftWidth,
+                column,
+                columnWidth,
                 tableWidth
              },
             })
@@ -388,12 +388,12 @@ FlexibleColumns.prototype = {
             return;
         }
 
-        let leftColumn = op.leftColumn;
+        let column = op.column;
         let table = this.table;
         let widthLeft, widthTable;
 
         if(difference !== 0) {
-            widthLeft = op.widths.left + difference;
+            widthLeft = op.widths.column + difference;
             widthTable = op.widths.table + difference;
         }
 
@@ -401,23 +401,23 @@ FlexibleColumns.prototype = {
             return;
         }
 
-        if(leftColumn) {
-            setWidthPx(leftColumn, widthLeft);
+        if(column) {
+            setWidthPx(column, widthLeft);
         }
 
         if(table) {
             setWidthPx(table, widthTable);
         }
 
-        op.newWidths.left = widthLeft;
+        op.newWidths.column = widthLeft;
         op.newWidths.table = widthTable;
 
         
         this.table.dispatchEvent(
             new CustomEvent('flexible-columns-move', {
             detail: { 
-                leftColumn: op.leftColumn,
-                leftWidth: widthLeft,
+                column: op.column,
+                columnWidth: widthLeft,
                 tableWidth: widthTable
              },
             })
@@ -435,12 +435,12 @@ FlexibleColumns.prototype = {
         this.handleContainer.className = this.handleContainer.className.replace(' '+CLASS_TABLE_RESIZING, '');
         this.table.className = this.table.className.replace(' '+CLASS_TABLE_RESIZING, '');
 
-        if(op.leftColumn) op.leftColumn.className = op.leftColumn.className.replace(' '+CLASS_COLUMN_RESIZING, '');
+        if(op.column) op.column.className = op.column.className.replace(' '+CLASS_COLUMN_RESIZING, '');
         op.currentGrip.className = op.currentGrip.className.replace(' '+CLASS_COLUMN_RESIZING, '');
 
         this.syncHandleWidths();
         this.saveColumnWidths();
-        // this.saveColumnWidth(op.leftColumn);
+        // this.saveColumnWidth(op.column);
 
         this.operation = null;
 
@@ -448,9 +448,9 @@ FlexibleColumns.prototype = {
         this.table.dispatchEvent(
             new CustomEvent('flexible-columns-stop', {
             detail: { 
-                leftColumn: op.leftColumn,
+                column: op.column,
                 // rightColumn: op.rightColumn,
-                leftWidth: op.newWidths.left,
+                columnWidth: op.newWidths.column,
                 tableWidth: op.newWidths.table
              },
             })
