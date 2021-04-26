@@ -1,0 +1,2316 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"column",
+				"columnId"
+			],
+			[
+				"max",
+				"maxWidthTable"
+			],
+			[
+				"setWidthP",
+				"setWidthPx"
+			],
+			[
+				"debounce",
+				"debounceMiliseconds"
+			],
+			[
+				"deboun",
+				"debounceFn"
+			],
+			[
+				"scroll",
+				"scrollbar"
+			],
+			[
+				"content",
+				"contentContainer"
+			],
+			[
+				"scrollable",
+				"scrollableContent"
+			],
+			[
+				"con",
+				"contentContainerId"
+			],
+			[
+				"sec",
+				"secObject"
+			],
+			[
+				"re",
+				"ResourceProvider"
+			],
+			[
+				"pre",
+				"preLoginData"
+			],
+			[
+				"branding",
+				"brandingPath"
+			],
+			[
+				"if",
+				"if	if"
+			],
+			[
+				"current",
+				"currentFilter"
+			],
+			[
+				"FILE",
+				"FILE_CONFIG_TYPE_FLAGS"
+			],
+			[
+				"table",
+				"tabletopFilter"
+			],
+			[
+				"tabletop",
+				"tabletopFilterConfig"
+			],
+			[
+				"switch",
+				"switchTableConfig"
+			],
+			[
+				"query",
+				"queryCustomTimeout"
+			],
+			[
+				"has",
+				"hasOwnProperty"
+			],
+			[
+				"com",
+				"componentName"
+			],
+			[
+				"nest",
+				"nestedConfig"
+			],
+			[
+				"data",
+				"dataOptions"
+			],
+			[
+				"sear",
+				"searchText"
+			],
+			[
+				"build",
+				"buildTableDataOptions"
+			],
+			[
+				"updated",
+				"updatedModel"
+			],
+			[
+				"getFil",
+				"getFilterableColumns"
+			],
+			[
+				"field",
+				"fieldKey"
+			],
+			[
+				"selected",
+				"selectedIds"
+			],
+			[
+				"this",
+				"thisTableProps"
+			],
+			[
+				"disp",
+				"disposeTableData"
+			],
+			[
+				"dtaa",
+				"dataLoaded"
+			],
+			[
+				"Predefined",
+				"predefinedTable"
+			],
+			[
+				"babel",
+				"babelHelpers"
+			],
+			[
+				"sort",
+				"sortableColumns"
+			],
+			[
+				"searchText",
+				"searchTextContainer"
+			],
+			[
+				"tabl",
+				"tableData"
+			],
+			[
+				"init",
+				"initSortableColumns"
+			],
+			[
+				"entity",
+				"entityName"
+			],
+			[
+				"loading",
+				"loadingData"
+			],
+			[
+				"sele",
+				"selections"
+			],
+			[
+				"new",
+				"newSelectedRows"
+			],
+			[
+				"selec",
+				"selectedRows"
+			],
+			[
+				"get",
+				"getProperty"
+			],
+			[
+				"svelte",
+				"SvelteComponents"
+			],
+			[
+				"ac",
+				"activeSubdomainId"
+			],
+			[
+				"destuc",
+				"svelteDestructors"
+			],
+			[
+				"onRow",
+				"onRowClickedHandler"
+			],
+			[
+				"is",
+				"isSvelte"
+			],
+			[
+				"edit",
+				"editComponents"
+			],
+			[
+				"editC",
+				"editComponentsCount"
+			],
+			[
+				"testK",
+				"testKeys"
+			],
+			[
+				"compo",
+				"component"
+			],
+			[
+				"compoe",
+				"componentsCount"
+			],
+			[
+				"editCo",
+				"editComponents"
+			],
+			[
+				"getData",
+				"getDataState"
+			],
+			[
+				"tri",
+				"triggerRowsUpdated"
+			],
+			[
+				"entit",
+				"entityNameOrDataSource"
+			],
+			[
+				"Er",
+				"ERROR"
+			],
+			[
+				"dispa",
+				"dispatch"
+			],
+			[
+				"mng1",
+				"mng164proxyHelper"
+			],
+			[
+				"fit",
+				"fitPluginLoaded"
+			],
+			[
+				"severity",
+				"severityName"
+			],
+			[
+				"sve",
+				"svelteComponentPath"
+			],
+			[
+				"componen",
+				"componentName"
+			],
+			[
+				"fault",
+				"faultModel"
+			],
+			[
+				"Sec",
+				"SecurityProvider"
+			],
+			[
+				"note",
+				"noteId"
+			],
+			[
+				"port",
+				"portSprite"
+			],
+			[
+				"bNode",
+				"bNodeGetPosition"
+			],
+			[
+				"aNo",
+				"aNodePortId"
+			],
+			[
+				"aNode",
+				"aNodeGetPosition"
+			],
+			[
+				"upd",
+				"updateConnectionPositions"
+			],
+			[
+				"anode",
+				"aNodeId"
+			],
+			[
+				"add",
+				"addListenersForConnectionNodes"
+			],
+			[
+				"remove",
+				"removeModelFromSelections"
+			],
+			[
+				"on_board_port_",
+				"on_board_port_planned"
+			],
+			[
+				"pixi",
+				"pixiProvider"
+			],
+			[
+				"addEven",
+				"addEventListener"
+			],
+			[
+				"addE",
+				"addEventListener"
+			],
+			[
+				"_",
+				"_visualObjectProvider"
+			],
+			[
+				"bridge",
+				"bridgeSprite"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"postion",
+				"position"
+			],
+			[
+				"child",
+				"childObject"
+			],
+			[
+				"three",
+				"threeJsProvider"
+			],
+			[
+				"vi",
+				"_visualObjectProvider"
+			],
+			[
+				"options",
+				"_options"
+			],
+			[
+				"selecte",
+				"selectedObject"
+			],
+			[
+				"getE",
+				"getEntityTypeCode"
+			],
+			[
+				"shift",
+				"shiftPosition"
+			],
+			[
+				"TheeJs",
+				"ThreeJsProvider"
+			],
+			[
+				"position",
+				"positionChanged"
+			],
+			[
+				"set",
+				"setPosition"
+			],
+			[
+				"Bridge",
+				"BridgeThreeJsProvider"
+			],
+			[
+				"getObje",
+				"getThreeJsObjectProviderForViewModel"
+			],
+			[
+				"obje",
+				"objects"
+			],
+			[
+				"isVi",
+				"isVisualObjectHoverable"
+			],
+			[
+				"obj",
+				"obj"
+			],
+			[
+				"image",
+				"imagePath"
+			],
+			[
+				"objectPr",
+				"objectProviderKeys"
+			],
+			[
+				"iF",
+				"if"
+			],
+			[
+				"container",
+				"containerDimensions"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"m",
+				"viewModel"
+			],
+			[
+				"visualObject",
+				"visualObjectType"
+			],
+			[
+				"getObject",
+				"getVisualObjectBuilder"
+			],
+			[
+				"an",
+				"animator"
+			],
+			[
+				"object",
+				"objectProviderArray"
+			],
+			[
+				"src",
+				"src"
+			],
+			[
+				"over",
+				"overrideLogExpress"
+			],
+			[
+				"transport",
+				"transportConfig"
+			],
+			[
+				"log",
+				"logger"
+			],
+			[
+				"login",
+				"loginRoute"
+			],
+			[
+				"redirec",
+				"redirectToPage"
+			],
+			[
+				"requested",
+				"requestedUrl"
+			],
+			[
+				"redire",
+				"redirectUrl"
+			],
+			[
+				"red",
+				"redirectUrl"
+			],
+			[
+				"redirect",
+				"redirectToLogin"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/flexibleColumns.css",
+			"settings":
+			{
+				"buffer_size": 369,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "demo/src/components/App/App.svelte",
+			"settings":
+			{
+				"buffer_size": 3703,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/FlexibleColumns.js",
+			"settings":
+			{
+				"buffer_size": 16163,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/index.js",
+			"settings":
+			{
+				"buffer_size": 200,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 699,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"safe",
+				"StringEncode: Safe HTML Entitize"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"enti",
+				"StringEncode: Safe HTML Entitize"
+			],
+			[
+				"htm",
+				"StringEncode: Safe HTML Entitize"
+			],
+			[
+				"entize",
+				"StringEncode: Safe HTML Entitize"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"packages",
+				"Package Control: List Packages"
+			],
+			[
+				"install packa",
+				"Package Control: Install Package"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 216.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/code/svelte-resizable-columns/src/ResizableColumns.js",
+		"/C/code/svelte-resizable-columns/demo/src/main.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/node_modules/svelte-resizable-columns/src/index.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/node_modules/svelte-resizable-columns/src/flexibleColumns.css",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/node_modules/svelte-resizable-columns/src/FlexibleColumns.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/styles/partials/_chart.scss",
+		"/C/Java/nms_ems/projects/git/6.7.1/ui/src/app/styles/partials/_chart.scss",
+		"/C/Java/nms_ems/projects/git/6.7.1/ui/src/server/config.js",
+		"/C/Java/nms_ems/projects/git/6.7.1/ui/src/server/routes/loginHelper.js",
+		"/C/Java/nms_ems/projects/git/6.7.1/ui/src/pages/login.js",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/app/styles/partials/_chart.scss",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/aura_components/app-control-dashboard/template.html",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/angular/directives/templates/grid.html",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/actions/actionsConfig.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/styles/partials/_fontRadview.scss",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/actions/eventbindable.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/actions/draggable.js",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/app/styles/partials/_header.scss",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/server/routes/loginHelper.js",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/app/extensions/splash.js",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/app/index.html",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/react/components/layout.js",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/react/components/layout.js",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/app/aura_components/header/main.js",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/app/aura_components/header/template.html",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/app/scripts/securityProvider.js",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/pages/login.js",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/server/config.js",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/server/routes/requestHelper.js",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/server/server.js",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/app/styles/main.scss",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/.env",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/cells/NetworkElement.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/rollup.config.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/aura_components/data-form-implementations/main.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/svelteComponents.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/badges/badges.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/base/TableView.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/resources/locales/en/radview.json",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/badges/EntityBadge.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/badges/NeType.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/entity/EntityVisualization.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/Cgw.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/PredefinedTables.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/config.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/forms/Tenant.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/aura_components/data-form-implementations/_tenant.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/server/config.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/server/server.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/server/routes/requestHelper.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/aura_components/header/template.html",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/aura_components/header/main.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/server/routes/loginHelper.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/server/uiModeHelper.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/securityProvider.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/extensions/splash.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/index.html",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/styles/partials/_header.scss",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/data/dataConfig.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/.env",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/react/components/forms/loginForm.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/react/components/forms/form.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/styles/main.scss",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/styles/partials/_inventory.scss",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/styles/partials/_shapes.scss",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/styles/main.css",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/pages/login.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/images/loading.png",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/svelte/forms/Tenant.js",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/app/scripts/actions/actionsConfig.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/badges/Card.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/main.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/client/svelteComponents.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/aura_components/data-form-implementations/_generatereport.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/entity/badges/EntityBadge.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/cells/NeType.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/cells/EntityCell.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/angular/directives/radGrid.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/entity/badges/EntityBadgeWithTooltip.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/tooltips/base/tooltips.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/base/TableViewCells.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/entity/badges/CardType.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/forms/SvelteComponents.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/cells/Card.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/entity/badges/NeType.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/utils.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/common/Utils/Model.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/entity/badges/EntityBadgeLookup.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/angular/directives/tooltip_templates/neTypeTemplate.html",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/dist/app/styles/fonts/RADview/RADview.svg",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/base/TableViewNestedObject.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/constants.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/aura_components/app-control-inventory-networkelements-ports/template.html",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/angular/filters/tables.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/common/Data/NamedFilters.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/data/namedQueries.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/angular/directives/forms.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/controls/FlipSwitch.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/angular/directives/tables.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/GenericTable.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/entity/badges/Card.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/common/Data/NamedQueries.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/base/Table.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/base/TableTopFilter.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/cells/Entity.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/data/serverQueryProvider.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/aura_components/message-bar/template.html",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/base/Filters.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/filters/NeViewFilter.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/aura_components/data-form-implementations/templates/_settings.html",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/aura_components/control-buttons/template.html",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/aura_components/data-table/main.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/cells/FaultType.svelte",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/aura_components/data-form-implementations/templates/_vnfcreatesnapshot.html",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/common/Utils/JSON.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/ArchivedFile.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/server/actionConfig.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/aura_components/data/main.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/common/Data/QueryParser.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/common/Constants/Queries.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/svelte/components/table/base/TableData.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/common/Constants.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/common/Constants/Files.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/angular/directives/templates/VnfInstance.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/common/EventDispatcher.js",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/app/scripts/data/dataConfig.js",
+		"/C/Java/nms_ems/projects/git/6.8.1/ui/src/app/scripts/data/serverQueryProvider.js",
+		"/C/Java/nms_ems/projects/git/trunk/ui/src/app/scripts/data/dataProvider.js"
+	],
+	"find":
+	{
+		"height": 66.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\svelte",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\aura_components",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\styles\\partials",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\server",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\styles",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\aura_components",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\styles",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\svelte",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\svelte\\components\\table",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\common",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts\\angular\\directives\\tooltip_templates",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app/scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\common\\Network",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app/scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\svelte\\components\\table",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\svelte",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\common",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\common",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\svelte",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\svelte",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\script",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\server",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts\\angular",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\aura_components",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts\\angular",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\aura_components",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\aura_components",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\styles",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\common",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\aura_components",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\svelte",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app/scripts/network",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app/scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\common",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\styles",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\svelte\\components\\table\\cells",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\aura_components",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\svelte",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\svelte\\components\\tables",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\svelte",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\svelte",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\aura_components",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\common",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\svelte",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\common",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\common",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\svelte",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\common",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\svelte\\components\\table",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\server",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\styles",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\server\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\server\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\aura_components",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\aura_components",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\server",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\react",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\pages",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app\\scripts",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\common",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\common",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\app",
+			"C:\\Java\\nms_ems\\projects\\git\\trunk\\ui\\src\\common"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"update",
+			"left",
+			"leftWidth",
+			"leftColumn",
+			"leftCol",
+			"setLeftPx",
+			"left",
+			"save",
+			"getColumnId",
+			"setWidthPx",
+			"restore",
+			"NaN",
+			"saveColumnWidth",
+			"store.",
+			"createHandles",
+			"getHeaders",
+			"isVisible",
+			"refreshHeaders",
+			"syncHandleWidths",
+			"update(",
+			"update:",
+			"saveColumnWidth",
+			"saveColumnWidths",
+			"parseWidth",
+			"store.",
+			"storeC",
+			"debugger",
+			"},\n",
+			"setWidthPx",
+			"parse",
+			"setWidthPx",
+			".set",
+			"store.",
+			" _",
+			"_",
+			"saveColumnWidths",
+			"parseWidth",
+			"store.",
+			"store",
+			"restoreColumnWidths",
+			"store",
+			"get",
+			"id(",
+			"id ",
+			"id",
+			"unique",
+			" if(table) {",
+			"column-id",
+			"self",
+			"generateColumnId",
+			"SELECTOR_UNRESIZABLE",
+			"generateColumnId",
+			"}",
+			"update",
+			"setWidth(",
+			"assignPercentageWidths",
+			"setWidth(",
+			"minWidthTab",
+			"update",
+			"defaults",
+			"update",
+			"debugger",
+			"maxWidthTable",
+			"defaults",
+			"FlexibleColumns",
+			"validateNewWidths",
+			".log",
+			"validateNewWidths",
+			"constrainWidth",
+			"debugger",
+			"minWidthTable",
+			"constrain",
+			"syncHandleWidths",
+			"restoreColumnWidths",
+			"refreshHeaders",
+			"createHandles",
+			"assignPercentageWidths",
+			"refreshHeaders",
+			"flexible-columns-move",
+			"getActualWidth",
+			".replace(",
+			".replace",
+			"constrainWidth",
+			"replace(",
+			"constrainTableWidth",
+			"constrainWidth",
+			"setWidth",
+			"parseWidth",
+			"resize-",
+			"event",
+			"show",
+			"resize-",
+			"rc-",
+			"Resizable",
+			"resizable",
+			"rc-",
+			"resizable",
+			"health",
+			"replace",
+			".ico",
+			"logoUri",
+			"$$$",
+			".ico",
+			"$$$",
+			"serveFile",
+			"brand",
+			"singleSelection",
+			"isHorizontalScrollable",
+			"horizon",
+			"onChangeConfigData",
+			"<select ",
+			"getTableWidth",
+			"scrolled",
+			"width",
+			"scrolled",
+			"innerScrolled",
+			"radcertificate",
+			"tenant",
+			"bar-box",
+			"h2",
+			"bar-box",
+			"no-action",
+			"h2",
+			"bar-box",
+			"port.",
+			"port",
+			"scrollleft",
+			"-nes\""
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"column",
+			"columnWidth",
+			"column",
+			"flexible-",
+			"fc-",
+			"Flexible",
+			"flexible",
+			"fc-",
+			"flexible",
+			"setup",
+			"scrollable",
+			"Port",
+			"cardInstance",
+			"cardEntity",
+			"cardTypeEntity",
+			"Card",
+			"CardName",
+			"name",
+			"cardTypeIcon",
+			"name",
+			"entity",
+			"entity.",
+			"getProperty",
+			"entity",
+			"tabletopFilterConfig",
+			"stateFilter",
+			"state",
+			"ArchivedFile",
+			"VnfInstance",
+			"component",
+			"filterComponent",
+			"{id}",
+			"",
+			"'",
+			"Card",
+			"isFunction",
+			"'",
+			"buildSortableColumns",
+			"'table-reset'",
+			"buildSortConfig",
+			"self",
+			"",
+			">",
+			"",
+			"uniqSimple",
+			"        tableProps.",
+			";",
+			" = ",
+			"tableProps.",
+			": ",
+			"",
+			",",
+			"getCellComponent",
+			"testKey:",
+			"title:",
+			"field",
+			"dataState",
+			"rows",
+			"loadingData",
+			"127.0.0.1",
+			"\"",
+			"\" ",
+			"=\"",
+			"DOMAIN_MAPPING_STATUS",
+			"InstStatus",
+			"TaskReportsStatus",
+			"neTypeVendors",
+			"AdminStatus",
+			"NeTypeFlags",
+			"NeTypeModelIds",
+			"IMAGE_FIRMWARE_FILE_TYPES",
+			"ExclusionaryQueryOperators",
+			"ExclusionaryQueryOperators\nExclusionaryQueryOperators",
+			"REGULEAR_EXPRESSIONS",
+			"Array.isArray",
+			"",
+			", ",
+			": ",
+			"",
+			"ControllerMode",
+			"TunnelTypes",
+			"TestStatus",
+			"TaskStatus",
+			"TasksRequestConfig",
+			"NeTypeModelIds",
+			"/>",
+			"chunk-client-",
+			"COMPONENT_PATH",
+			"<h1 class=\"chapter\">Chapter$1</h1>",
+			"<p>$1</p>",
+			"thisConnection",
+			"ConnectionPixiProvider",
+			"_selectedEntities",
+			" =",
+			"BridgePixiProvider",
+			"pixiProvider",
+			"_app.stage",
+			"pixiObjectProviders",
+			"_pixiObjectProviders",
+			"PixiProvider",
+			"820",
+			"objectToMove",
+			"onDragging",
+			"isActionable",
+			"bridgeSprite",
+			"getThreeJsObjectProviderForEntityType",
+			"_interactControls",
+			"",
+			"_camera",
+			"_controls",
+			"_displayMode",
+			"_changeEventTimeout",
+			"_maxItemsInExpandContainer",
+			"_maxItemsBeforeContainerResizes",
+			"_childrensBordersMargins",
+			"_childrensBordersWidth",
+			"_childrensBordersHeight",
+			"_interactiveObjects",
+			"_physicalGroup",
+			"_materials",
+			"_geometries",
+			"_scene",
+			"_focusPosition",
+			"_centerPosition",
+			"_cameraStartPosition",
+			"_radarView",
+			"_isFirstTimeLoaded",
+			"_canvasHeight"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/flexibleColumns.css",
+					"settings":
+					{
+						"buffer_size": 369,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								238,
+								238
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"white": false,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "demo/src/components/App/App.svelte",
+					"settings":
+					{
+						"buffer_size": 3703,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2110,
+								2110
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"white": false,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1680.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/FlexibleColumns.js",
+					"settings":
+					{
+						"buffer_size": 16163,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								386,
+								386
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"white": false,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/index.js",
+					"settings":
+					{
+						"buffer_size": 200,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								200,
+								200
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"white": false,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "package.json",
+					"settings":
+					{
+						"buffer_size": 699,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								59,
+								59
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"white": false,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 142.0
+	},
+	"output.find_results":
+	{
+		"height": 226.0
+	},
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"package",
+				"svelte-resizable-columns/package.json"
+			],
+			[
+				"server",
+				"server/server.js"
+			],
+			[
+				"loginh",
+				"server/routes/loginHelper.js"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"layout",
+				"react/components/layout.js"
+			],
+			[
+				"index",
+				"app/index.html"
+			],
+			[
+				"login",
+				"pages/login.js"
+			],
+			[
+				"loginhe",
+				"server/routes/loginHelper.js"
+			],
+			[
+				"config",
+				"server/config.js"
+			],
+			[
+				"requesthelp",
+				"server/routes/requestHelper.js"
+			],
+			[
+				"table.sve",
+				"svelte/components/table/base/Table.svelte"
+			],
+			[
+				"tableview",
+				"svelte/components/table/base/TableView.svelte"
+			],
+			[
+				"radgr",
+				"app/scripts/angular/directives/radGrid.js"
+			],
+			[
+				"/eth-services/templ",
+				"app/aura_components/app-control-services-ethservices-services/template.html"
+			],
+			[
+				"radgrid",
+				"app/scripts/angular/directives/radGrid.js"
+			],
+			[
+				"radsgrid",
+				"app/scripts/angular/directives/templates/grid.html"
+			],
+			[
+				"dat-table/main",
+				"app/aura_components/data-table/main.js"
+			],
+			[
+				"horizontalscrollable",
+				"svelte/actions/horizontalScrollable.js"
+			],
+			[
+				"base/tooltip",
+				"svelte/components/tooltips/base/tooltips.js"
+			],
+			[
+				"tablescolle",
+				"app/scripts/angular/directives/templates/tables_collection.html"
+			],
+			[
+				"_tenant",
+				"app/aura_components/data-form-implementations/_tenant.js"
+			],
+			[
+				"_fontr",
+				"app/styles/partials/_fontRadview.scss"
+			],
+			[
+				"_fonts",
+				"app/styles/partials/_fonts.scss"
+			],
+			[
+				"gridhtml",
+				"app/scripts/angular/directives/templates/grid.html"
+			],
+			[
+				"action",
+				"app/scripts/actions/actionsConfig.js"
+			],
+			[
+				"browsersupp",
+				"app/aura_components/data-form-implementations/templates/_browsersupport.html"
+			],
+			[
+				"_y15",
+				"app/aura_components/data-form-implementations/templates/_y1564testtemplate.html"
+			],
+			[
+				"loginhel",
+				"server/routes/loginHelper.js"
+			],
+			[
+				"header.scss",
+				"app/styles/partials/_header.scss"
+			],
+			[
+				"index.html",
+				"app/index.html"
+			],
+			[
+				"splash.js",
+				"app/extensions/splash.js"
+			],
+			[
+				"layout.js",
+				"react/components/layout.js"
+			],
+			[
+				"splash",
+				"app/extensions/splash.js"
+			],
+			[
+				"reactform",
+				"react/components/forms/form.js"
+			],
+			[
+				"main.css",
+				"app/styles/main.css"
+			],
+			[
+				"securityp",
+				"app/scripts/securityProvider.js"
+			],
+			[
+				"loginform",
+				"react/components/forms/loginForm.js"
+			],
+			[
+				"dataconfig",
+				"app/scripts/data/dataConfig.js"
+			],
+			[
+				"login.",
+				"pages/login.js"
+			],
+			[
+				"radview",
+				"app/scripts/resources/locales/en/radview.json"
+			],
+			[
+				"securityprovider",
+				"app/scripts/securityProvider.js"
+			],
+			[
+				"uimodehelper",
+				"server/uiModeHelper.js"
+			],
+			[
+				"loginhelper",
+				"server/routes/loginHelper.js"
+			],
+			[
+				"radview.json",
+				"app/scripts/resources/locales/en/radview.json"
+			],
+			[
+				"header/main.",
+				"app/aura_components/header/main.js"
+			],
+			[
+				"header/html",
+				"app/aura_components/header/template.html"
+			],
+			[
+				"requesthelper",
+				"server/routes/requestHelper.js"
+			],
+			[
+				"_tenant.js",
+				"app/aura_components/data-form-implementations/_tenant.js"
+			],
+			[
+				"forms/tenant",
+				"svelte/components/forms/Tenant.svelte"
+			],
+			[
+				"entitybadge.svelte",
+				"svelte/components/badges/EntityBadge.svelte"
+			],
+			[
+				"badges.js",
+				"svelte/components/badges/badges.js"
+			],
+			[
+				"predefinedtables",
+				"svelte/components/table/PredefinedTables.js"
+			],
+			[
+				"entityvisualization",
+				"svelte/components/entity/EntityVisualization.svelte"
+			],
+			[
+				"svelteresize",
+				"node_modules/svelte-resizable-columns/src/ResizableColumns.js"
+			],
+			[
+				"actions",
+				"app/scripts/actions/actionsConfig.js"
+			],
+			[
+				"entity.js",
+				"svelte/components/utils/Entity.js"
+			],
+			[
+				"actionsc",
+				"app/scripts/actions/actionsConfig.js"
+			],
+			[
+				"data-form-impl/main",
+				"app/aura_components/data-form-implementations/main.js"
+			],
+			[
+				"rollup",
+				"rollup.config.js"
+			],
+			[
+				"main",
+				"app/main.js"
+			],
+			[
+				"networkelem.sv",
+				"svelte/components/table/cells/NetworkElement.svelte"
+			],
+			[
+				"actionsconfig",
+				"app/scripts/actions/actionsConfig.js"
+			],
+			[
+				"config.",
+				"server/config.js"
+			],
+			[
+				"cardtype",
+				"app/scripts/angular/directives/tooltip_templates/cardTypeTemplate.html"
+			],
+			[
+				"utils",
+				"app/scripts/utils.js"
+			],
+			[
+				"data-table/main",
+				"app/aura_components/data-table/main.js"
+			],
+			[
+				"tooltip_template/cardtype",
+				"app/scripts/angular/directives/tooltip_templates/cardTypeTemplate.html"
+			],
+			[
+				"tooltip_templates/netyp",
+				"app/scripts/angular/directives/tooltip_templates/neTypeTemplate.html"
+			],
+			[
+				"generatereport",
+				"app/aura_components/data-form-implementations/_generatereport.js"
+			],
+			[
+				"_settings",
+				"app/aura_components/data-form-implementations/templates/_settings.html"
+			],
+			[
+				"control-button",
+				"app/aura_components/control-buttons/template.html"
+			],
+			[
+				"neview",
+				"svelte/components/table/filters/NeViewFilter.svelte"
+			],
+			[
+				"entity.sve",
+				"svelte/components/table/cells/Entity.svelte"
+			],
+			[
+				"_vnfsna",
+				"app/aura_components/data-form-implementations/templates/_vnfcreatesnapshot.html"
+			],
+			[
+				"entity.svelte",
+				"svelte/components/table/cells/Entity.svelte"
+			],
+			[
+				"serverquer",
+				"app/scripts/data/serverQueryProvider.js"
+			],
+			[
+				"generictable",
+				"svelte/components/table/GenericTable.svelte"
+			],
+			[
+				"tabledata",
+				"svelte/components/table/base/TableData.js"
+			],
+			[
+				"queries",
+				"common/Constants/Queries.js"
+			],
+			[
+				"querypa",
+				"common/Data/QueryParser.js"
+			],
+			[
+				"actionconfig",
+				"server/actionConfig.js"
+			],
+			[
+				"nestedob",
+				"svelte/components/table/base/TableViewNestedObject.svelte"
+			],
+			[
+				"uimode",
+				"server/uiModeHelper.js"
+			],
+			[
+				"message-bar/",
+				"app/aura_components/message-bar/template.html"
+			],
+			[
+				"eventdis",
+				"common/EventDispatcher.js"
+			],
+			[
+				"directive/common.js",
+				"app/scripts/angular/directives/common.js"
+			],
+			[
+				"named",
+				"common/Data/NamedQueries.js"
+			],
+			[
+				"grid",
+				"app/scripts/angular/directives/templates/grid.html"
+			],
+			[
+				"tables_",
+				"app/scripts/angular/directives/templates/tables_collection.html"
+			],
+			[
+				"generic",
+				"svelte/components/table/GenericTable.svelte"
+			],
+			[
+				"json.js",
+				"common/Utils/JSON.js"
+			],
+			[
+				"rest",
+				"app/scripts/rest.js"
+			],
+			[
+				"serverquery",
+				"app/scripts/data/serverQueryProvider.js"
+			],
+			[
+				"rest.js",
+				"app/scripts/rest.js"
+			],
+			[
+				"app-control-inventory-networkelements-nes",
+				"app/aura_components/app-control-inventory-networkelements-nes/template.html"
+			],
+			[
+				"inventory/template",
+				"app/aura_components/app-control-inventory/template.html"
+			],
+			[
+				"networkelements/template",
+				"app/aura_components/app-control-inventory-networkelements/template.html"
+			],
+			[
+				"nestedtablerowwrapper",
+				"app/scripts/angular/directives/templates/nestedTableRowWrapperTemplate.html"
+			],
+			[
+				"grid.html",
+				"app/scripts/angular/directives/templates/grid.html"
+			],
+			[
+				"rdgrid",
+				"app/scripts/angular/directives/radGrid.js"
+			],
+			[
+				"configurationtemplate",
+				"app/aura_components/data-form-implementations/_configurationtemplate.js"
+			],
+			[
+				"serverqueryprovider",
+				"app/scripts/data/serverQueryProvider.js"
+			],
+			[
+				"actionprovider",
+				"app/scripts/actions/actionProvider.js"
+			],
+			[
+				"network-diagram",
+				"app/aura_components/network-diagram/main.js"
+			],
+			[
+				"gitignore",
+				".gitignore"
+			],
+			[
+				"gitig",
+				".gitignore"
+			],
+			[
+				"httpshe",
+				"server/httpsHelper.js"
+			],
+			[
+				"_role",
+				"app/aura_components/data-form-implementations/_role.js"
+			],
+			[
+				"control/template",
+				"app/aura_components/app-control/template.html"
+			],
+			[
+				"forms/template",
+				"app/aura_components/control-data-forms/template.html"
+			],
+			[
+				"polyfills",
+				"app/scripts/polyfills.js"
+			],
+			[
+				"table",
+				"svelte/components/table/base/Table.svelte"
+			],
+			[
+				"nevt",
+				"app/aura_components/data-form-implementations/_nevtwo.js"
+			],
+			[
+				"network-diagram/templa",
+				"app/aura_components/network-diagram/template.html"
+			],
+			[
+				"subdomain/templa",
+				"app/aura_components/app-control-inventory-subdomains/template.html"
+			],
+			[
+				"table.svelte",
+				"svelte/components/table/base/Table.svelte"
+			],
+			[
+				"netype",
+				"common/Data/Maps/NeType.js"
+			],
+			[
+				"lookup",
+				"common/Lookups.js"
+			],
+			[
+				"network-map",
+				"app/aura_components/network-map/main.js"
+			],
+			[
+				"map",
+				"app/scripts/map/MapProvider.js"
+			],
+			[
+				"exporter",
+				"svelte/components/table/base/TableExporter.js"
+			],
+			[
+				"clientfilterpartexecutors",
+				"common/Data/ClientFilterPartExecutors.js"
+			],
+			[
+				"clientfilterprovider",
+				"common/Data/ClientFilterProvider.js"
+			],
+			[
+				"table.sv",
+				"svelte/components/table/base/Table.svelte"
+			],
+			[
+				"networkmodel",
+				"app/scripts/network/NetworkModel.js"
+			],
+			[
+				"ne.js",
+				"common/Network/NE.js"
+			],
+			[
+				"data-table",
+				"app/aura_components/data-table/main.js"
+			],
+			[
+				"visualobject",
+				"app/scripts/network/FlatVisualObjectBuilder.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 285.0,
+	"status_bar_visible": true
+}

@@ -201,6 +201,7 @@ FlexibleColumns.prototype = {
                 tableId
             ));
             if(width) {
+                width = Math.max(width, this.table.offsetWidth);
                 setWidthPx(this.table, width);
             }
         }
