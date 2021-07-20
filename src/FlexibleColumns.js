@@ -198,7 +198,7 @@ FlexibleColumns.prototype = {
         const tableId = this.options.getTableId && this.options.getTableId(this.table);
         if(tableId && this.options.store) {
             let width = parseFloat(this.options.store.get(
-                tableId
+                this.options.storePrefix + tableId
             ));
             if(width) {
                 width = Math.max(width, this.table.offsetWidth);
@@ -212,7 +212,7 @@ FlexibleColumns.prototype = {
             const columnId = this.options.getColumnId && this.options.getColumnId(this.table, el);
             if(columnId && this.options.store && !el.matches(SELECTOR_UNRESIZABLE)) {
                 let width = parseFloat(this.options.store.get(
-                    columnId
+                    this.options.storePrefix + columnId
                 ));
                 if(width) {
                     setWidthPx(el, width);
@@ -265,7 +265,7 @@ FlexibleColumns.prototype = {
             // }
 
             this.options.store.set(
-                tableId,
+                this.options.storePrefix + tableId,
                 newWidth
             );
         }
@@ -280,7 +280,7 @@ FlexibleColumns.prototype = {
             // }
 
             this.options.store.set(
-                columnId,
+                this.options.storePrefix + columnId,
                 newWidth
             );
         }
@@ -489,7 +489,8 @@ FlexibleColumns.defaults = {
   maxWidth: null,
   minWidth: 0.01,
   maxWidthTable: null,
-  minWidthTable: 'parent'  
+  minWidthTable: 'parent',
+  storePrefix: 'FlexibleColumns$'  
 };
 
 FlexibleColumns.count = 0;
