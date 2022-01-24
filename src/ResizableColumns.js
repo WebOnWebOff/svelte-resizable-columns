@@ -81,6 +81,9 @@ function ResizableColumns(table, options) {
     table.ResizableColumns = this;
 
     this.options = Object.assign({}, ResizableColumns.defaults, options);
+    if(!options.hasOwnProperty('store')) {
+        options.store= window ? window.store : null;
+    }
     this.window = window;
     this.ownerDocument = table.ownerDocument;
     this.table = table;
@@ -408,7 +411,7 @@ ResizableColumns.defaults = {
         return tr.querySelectorAll('td');
     }
   },
-  store: window.store,
+//   store: window.store, //created dynamically during runtime (above) to support SSR
   syncHandlers: true,
   resizeFromBody: true,
   maxWidth: null,

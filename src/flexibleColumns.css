@@ -8,6 +8,9 @@
   margin-left: -3px;
   z-index: 2;
 }
+.fc-handle-noresize {
+  display:none;
+}
 .fc-handle {
   cursor: ew-resize;
 }

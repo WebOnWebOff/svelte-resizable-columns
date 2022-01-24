@@ -1,6 +1,6 @@
 {
   "name": "svelte-resizable-columns",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Svelte JS action for resizing HTML table columns",
   "main": "src/index.js",
   "directories": {

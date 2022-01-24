@@ -499,7 +499,7 @@
 			"file": "demo/src/components/App/App.svelte",
 			"settings":
 			{
-				"buffer_size": 3703,
+				"buffer_size": 3734,
 				"line_ending": "Windows"
 			}
 		},
@@ -507,7 +507,7 @@
 			"file": "src/FlexibleColumns.js",
 			"settings":
 			{
-				"buffer_size": 16163,
+				"buffer_size": 16228,
 				"line_ending": "Windows"
 			}
 		},
@@ -873,6 +873,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"no-resize",
+			"noresize",
 			"update",
 			"left",
 			"leftWidth",
@@ -998,9 +1000,7 @@
 			"h2",
 			"bar-box",
 			"port.",
-			"port",
-			"scrollleft",
-			"-nes\""
+			"port"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1146,6 +1146,7 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1269,15 +1270,15 @@
 					"file": "demo/src/components/App/App.svelte",
 					"settings":
 					{
-						"buffer_size": 3703,
+						"buffer_size": 3734,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2110,
-								2110
+								330,
+								330
 							]
 						],
 						"settings":
@@ -1372,10 +1373,12 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1680.0,
+						"translation.y": 224.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1385,15 +1388,15 @@
 					"file": "src/FlexibleColumns.js",
 					"settings":
 					{
-						"buffer_size": 16163,
+						"buffer_size": 16228,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								386,
-								386
+								513,
+								513
 							]
 						],
 						"settings":
@@ -1626,8 +1629,8 @@
 						"selection":
 						[
 							[
-								59,
-								59
+								275,
+								275
 							]
 						],
 						"settings":
