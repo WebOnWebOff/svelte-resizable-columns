@@ -1,5 +1,3 @@
-import './resizableColumns.css';
-
 const DATA_API = 'resizableColumns';
 const DATA_COLUMNS_ID = 'resizable-columns-id';
 const DATA_COLUMN_ID = 'resizable-column-id';
@@ -81,8 +79,8 @@ function ResizableColumns(table, options) {
     table.ResizableColumns = this;
 
     this.options = Object.assign({}, ResizableColumns.defaults, options);
-    if(!options.hasOwnProperty('store')) {
-        options.store= window ? window.store : null;
+    if(!this.options.hasOwnProperty('store')) {
+        this.options.store= window ? window.store : null;
     }
     this.window = window;
     this.ownerDocument = table.ownerDocument;

@@ -1,5 +1,3 @@
-import './flexibleColumns.css';
-
 const DATA_API = 'flexibleColumns';
 const DATA_COLUMNS_ID = 'flexible-columns-id';
 const DATA_COLUMN_ID = 'flexible-column-id';

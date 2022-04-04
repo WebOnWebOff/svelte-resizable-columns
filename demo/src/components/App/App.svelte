@@ -2,6 +2,9 @@
   import { ResizableColumns } from '../../../../src/index';
   import { FlexibleColumns } from '../../../../src/index';
 
+  import '../../../../src/resizableColumns.css';
+  import '../../../../src/flexibleColumns.css';
+
   let left, right, table, column, event;
 
   let tableType = 'flexible';
