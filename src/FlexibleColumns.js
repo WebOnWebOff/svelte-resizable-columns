@@ -96,7 +96,16 @@ function FlexibleColumns(table, options) {
     this.window.addEventListener('resize', this.syncHandleWidthsCallback);
 
     //TODO: find better solution; when table columns adjust after a delay,
-    setTimeout(() => this.syncHandleWidths(), 2000);
+    setTimeout(() => {
+        this.syncHandleWidths();
+        this.table.dispatchEvent(
+            new CustomEvent('flexible-columns-initiated', {
+                detail: { 
+                    tableWidth: getActualWidth(this.table)
+                }
+            })
+        );        
+    }, 2000);
   
   return {
     update({syncHandlers}) {
