@@ -98,13 +98,15 @@ function FlexibleColumns(table, options) {
     //TODO: find better solution; when table columns adjust after a delay,
     setTimeout(() => {
         this.syncHandleWidths();
-        this.table?.dispatchEvent(
-            new CustomEvent('flexible-columns-initiated', {
-                detail: { 
-                    tableWidth: getActualWidth(this.table)
-                }
-            })
-        );        
+        if(this.table) {
+            this.table.dispatchEvent(
+                new CustomEvent('flexible-columns-initiated', {
+                    detail: { 
+                        tableWidth: getActualWidth(this.table)
+                    }
+                })
+            );    
+        }  
     }, 2000);
   
   return {
